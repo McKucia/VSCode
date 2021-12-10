@@ -1,0 +1,39 @@
+{
+  "interns": [
+    {
+      "id": 1,
+      "name": "Maciej Kucia",
+      "email": "macikucia@onet.pl",
+      "internshipStart": "2021-08-24T00:00+00Z",
+      "internshipEnd": "2021-09-30T00:00+00Z"
+    },
+    {
+      "id": 2,
+      "name": "Lillian Burgess",
+      "email": "lillianburgess@luxuria.com",
+      "internshipStart": "2021-11-01T00:00+00Z",
+      "internshipEnd": "2021-01-30T00:00+00Z"
+    },
+    {
+      "id": 3,
+      "name": "Kristie Cole",
+      "email": "kristiecole@quadeebo.com",
+      "internshipStart": "2020-05-03T00:00+00Z",
+      "internshipEnd": "2020-04-20T00:00+00Z"
+    },
+    {
+      "id": 4,
+      "name": "Leonor Cross",
+      "email": "leonorcross@gronk.com",
+      "internshipStart": "2020-07-09T00:00+00Z",
+      "internshipEnd": "2020-01-17T00:00+00Z"
+    },
+    {
+      "id": 5,
+      "name": "Marsh Mccall",
+      "email": "marshmccall@ultrimax.com",
+      "internshipStart": "2020-02-02T00:00+00Z",
+      "internshipEnd": "2020-02-14T00:00+00Z"
+    }
+  ]
+}

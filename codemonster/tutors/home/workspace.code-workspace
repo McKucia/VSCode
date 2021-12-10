@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\Studia\\rok_2\\DOCKER\\ask-node-react-docker"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "VScode"
+	}
+}

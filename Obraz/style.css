@@ -1,0 +1,36 @@
+body {
+    background: rgb(41, 41, 41);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canv {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.my-input {
+    font-size: 18px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+}
+
+.my-button {
+    background: white;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px 10px 3px 10px;
+}
+
+.my-button:hover { background: rgb(233, 233, 233); }
+.my-button:active { background: white; }

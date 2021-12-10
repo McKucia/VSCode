@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Image processing</title>
+</head>
+
+<body>
+
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+
+    <div class="container">
+        <div style="margin-bottom: 5px">
+            <input class="my-input my-image" type="text" value="./dama.jpg" placeholder="nazwa pliku..." />
+            <button class="my-button" onclick="loadImage()">Wczytaj</button>
+        </div>
+        <div>
+            <input class="my-input my-contrast" type="text" value="10" />
+            <button class="my-button" onclick="contrast()">Korekcja kontrastu</button>
+        </div>
+        <div style="margin-top: 10px">
+            <button class="my-button" onclick="attachFilter('lowpass')">Low-pass filter</button>
+            <button class="my-button" onclick="attachFilter('highpass')">High-pass filter</button>
+            <button class="my-button" onclick="attachFilter('lp2')">LP2 filter</button>
+            <button class="my-button" onclick="attachFilter('gradient')">Gradient filter</button>
+        </div>
+    </div>
+
+    <canvas class="canv" style="display: block;" id="canvas" width="0" height="0"></canvas>
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.field {
+    background: rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field:hover { outline: 1px solid black; }
+
+.field:nth-child(even) { background: rgba(0, 0, 0, 0.07); }
+
+.field p { margin-left: 20px; }
+.field a { 
+    font-weight: 700;
+    margin-right: 20px; 
+}

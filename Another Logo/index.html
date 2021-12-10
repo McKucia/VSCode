@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Logo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+        }
+
+        ul {
+            cursor: pointer;
+            width: 450px;
+            margin: auto;
+            list-style-type: none;
+        }
+
+        ul li{
+            font-family: 'Catamaran';
+            font-size: 50px;
+            color: yellow;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: inline-block;
+            text-shadow: 0 0 30px white, 0 0 10px yellow;
+        }
+
+        li:nth-child(3){
+            transform: rotate(15deg) translateY(10px);
+            animation: neon 0.5s infinite ease-in-out;
+        }
+
+        @keyframes neon {
+            0%, 100%{
+                opacity: 0.8;
+            }
+
+            25%{
+                opacity: 0.3;
+            }
+
+            79%{
+                opacity: 0.7;
+            }
+
+            92%{
+                opacity: 0.12;
+            }
+        }
+
+        .off{
+            opacity: 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>L</li>
+        <li>A</li>
+        <li>S</li>
+        <li>F</li>
+        <li>I</li>
+        <li>S</li>
+        <li>Z</li>
+        <li>K</li>
+        <li>A</li>
+        <li>S</li>
+    </ul>
+
+    <script>
+        var button = document.querySelector("ul");
+        button.addEventListener("click", function(){    
+
+            var letters = document.querySelectorAll("li");
+            for(var i = 0; i < letters.length; i++){
+                letters[i].classList.toggle("off");
+            }
+        })
+        
+    </script>
+</body>
+
+</html>

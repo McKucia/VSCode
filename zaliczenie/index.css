@@ -1,0 +1,87 @@
+:root {
+    --white: #ebebeb;
+    --gray: #818181;
+    --blue2: #5085A5;
+    --blue3: #31708E;
+    --blue4: #2a617a;
+}
+
+body { 
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    font-weight: 500;
+    background-color: var(--white);
+}
+
+.sidenav {
+    height: 100%; width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0; left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .sidenav img {
+      border: 1px solid var(--white);
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 25px;
+    color: var(--gray);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--white);
+  }
+
+#container {
+    margin-left: 260px;
+    margin-right: 20px;
+}
+
+.sushi-types {
+    text-align: center;
+    list-style: none;
+}
+
+ .sushi-types li {
+     width: 350px;
+     display: inline-block;
+     box-shadow: 0 0 7px var(--gray);
+     margin: 20px 20px;
+ }
+
+ .sushi-types li h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 0; padding: 0;
+ }
+
+ .sushi-types li p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.ingredients {
+    display: flex;
+}
+
+.recipe-img {
+
+    box-shadow: 0 0 7px var(--gray);
+}
+
+.recipe {
+    width: 70%; 
+    list-style-type: decimal;
+}

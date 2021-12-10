@@ -1,0 +1,91 @@
+html { min-height: 100%; }
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+#watch {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 400px;
+    height: 400px;
+    border: 3px solid black; border-radius: 50%;
+    position: relative;
+}
+
+#watch:after {
+    content: '';
+    width: 15px; height: 15px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+#watch .number {
+    font-size: 2rem; font-weight: 700;
+    position: absolute;
+    width: 100%; height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+
+#watch .number1  { --rotation: 30deg; }
+#watch .number2  { --rotation: 60deg;  }
+#watch .number3  { --rotation: 90deg;  }
+#watch .number4  { --rotation: 120deg; }
+#watch .number5  { --rotation: 150deg; }
+#watch .number6  { --rotation: 180deg; }
+#watch .number7  { --rotation: 210deg; }
+#watch .number8  { --rotation: 240deg; }
+#watch .number9  { --rotation: 270deg; }
+#watch .number10 { --rotation: 300deg; }
+#watch .number11 { --rotation: 330deg; }
+
+#watch .number::after { display: inline-block; transform: rotate(var(--rotation)); }
+#watch .number1::after { --rotation: -30deg; content: '1';    }
+#watch .number2::after { --rotation: -60deg; content: '2';    }
+#watch .number3::after { --rotation: -90deg; content: '3';    }
+#watch .number4::after { --rotation: -120deg; content: '4';   }
+#watch .number5::after { --rotation: -150deg; content: '5';   }
+#watch .number6::after { --rotation: -180deg; content: '6';   }
+#watch .number7::after { --rotation: -210deg; content: '7';   }
+#watch .number8::after { --rotation: -240deg; content: '8';   }
+#watch .number9::after { --rotation: -270deg; content: '9';   }
+#watch .number10::after { --rotation: -300deg; content: '10'; }
+#watch .number11::after { --rotation: -330deg; content: '11'; }
+#watch .number12::after { --rotation: 0; content: '12'; }
+
+#watch .hand {
+    --rotation: 90;
+    position: absolute;
+    width: 10px; height: 50%;
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+    bottom: 50%; left: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+}
+
+#watch .hand-hour {
+    height: 25%;
+    z-index: 10;
+}
+#watch .hand-minute {
+    z-index: 11; 
+    height: 40%;
+}
+#watch .hand-second {
+    width: 2px; height: 45%;
+    z-index: 12;
+    background-color: red;
+}
